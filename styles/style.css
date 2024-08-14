@@ -22,13 +22,13 @@
     margin: 0;
     padding: 0;
 }
-/* Universal classes ends here */
-
-/* Shared styles starts here */
 body{
     max-width: 1440px;
     margin: 0 auto;
 }
+/* Universal classes ends here */
+
+/* Shared styles starts here */
 header,
 main{
     padding: 0 25px;
@@ -59,6 +59,9 @@ main{
     font-size: 1rem;
     font-weight: 400;
     line-height: 32px
+}
+span{
+    color: rgb(231, 111, 81);
 }
 /* Shared styles ends here */
 
@@ -202,12 +205,60 @@ header{
 }
 /* News  section ends here */
 
+/* Clients section starts here */
+.clients-section{
+    margin-top: 100px;
+}
+.clients-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    gap: 50px;
+    padding: 0 25px;
+    margin-top: 50px;
+}
+.clients-card{
+    padding: 25px;
+    box-sizing: border-box;
+    border: 1px solid rgb(222, 222, 222);
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+}
+.clients-card-header > img{
+    width: 50%;
+    margin: 25px 0;
+}
+.clients-ratings > img{
+    width: 9%;
+    margin-bottom: 15px;
+}
+.clients-card-body{
+    margin-bottom: 25px;
+}
+.clients-footer-title-1{
+    color: rgb(35, 166, 240);
+    font-family: Poppins;
+    font-size: .9rem;
+    font-weight: 600;
+    line-height: 25px;
+    margin-bottom: 5px;
+}
+.clients-footer-title-2{
+    color: rgb(37, 43, 66);
+    font-family: Poppins;
+    font-size: .9rem;
+    font-weight: 600;
+    line-height: 25px;
+}
+/* Clients section ends here */
+
 
 
 /*================================ Responsive design starts here (For mobile)================================ */
 @media screen and (max-width:576px) {
 header,
-.featured-section{
+.featured-section,
+.clients-section{
     padding: 0 20px;
 }
 .title{
@@ -263,8 +314,15 @@ header,
 }
 /* News section ends here */
 
+/* Clients section starts here */
+.clients-container{
+    grid-template-columns: 1fr;
+    padding: 0 5px;
 }
-/* Responsive design ends here (For mobile) */
+/* Clients section ends here */
+
+}
+/*============================= Responsive design ends here (For mobile)============================== */
 
 
 /* Responsive design starts here (For tablet) */
@@ -296,5 +354,14 @@ font-size: 2rem;
     grid-template-columns: 1fr;
 }
 /* News section ends here */
+
+/* Clients section starts here */
+.clients-container{
+    grid-template-columns: 1fr;
+}
+.clients-card{
+    padding: 25px 50px;
+}
+/* Clients section ends here */
 }
 /* Responsive design ends here (For mobile) */
