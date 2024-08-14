@@ -43,6 +43,7 @@ main{
     font-size: 1.1rem;
     font-weight: 600;
     line-height: 30px;
+    cursor: pointer;
 }
 .title{
     color: rgb(0, 0, 0);
@@ -190,15 +191,20 @@ header{
 .news-card-title{
     color: rgb(24, 25, 31);
     font-family: Poppins;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     font-weight: 600;
     line-height: 40px;
+}
+.news-btn{
+    border: 1px solid rgb(231, 111, 81);
+    color: rgb(231, 111, 81);
+    background-color: white;
 }
 /* News  section ends here */
 
 
 
-/* Responsive design starts here (For mobile) */
+/*================================ Responsive design starts here (For mobile)================================ */
 @media screen and (max-width:576px) {
 header,
 .featured-section{
@@ -207,6 +213,9 @@ header,
 .title{
     font-size: 2rem;
     line-height: 40px;
+}
+.description{
+    text-align: justify;
 }
 /* Header section starts here */
 .nav-brands > .logo{
@@ -239,6 +248,7 @@ header,
 
 /* Featured section starts here */
 .featured-container{
+    margin-top: 0;
     grid-template-columns: 1fr;
     gap: 50px;
 }
@@ -273,6 +283,13 @@ header,
 font-size: 2rem;
 }
 /* Header section ends here */
+
+/* Featured section starts here */
+.featured-container{
+    grid-template-columns: 1fr;
+    gap: 50px;
+}
+/* Featured section ends here */
 
 /* News section starts here */
 .news-container{
