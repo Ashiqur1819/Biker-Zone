@@ -23,3 +23,143 @@
     padding: 0;
 }
 /* Universal classes ends here */
+
+/* Shared styles starts here */
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+header{
+    padding: 0 25px;
+}
+.btn{
+    padding: 12px 50px;
+    border: none;
+    border-radius: 5px;
+    background: rgb(231, 111, 81);
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 30px;
+}
+/* Shared styles ends here */
+
+/* Header section starts here */
+header{
+    background: linear-gradient(90.00deg, rgb(24, 24, 24),rgba(24, 24, 24, 0.82) 24.479%,rgba(24, 24, 24, 0)), url("../images/others/banner.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.nav-brands > .logo{
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 50px;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.nav-item{
+    list-style: none;
+}
+.nav-link{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 25px;
+}
+#responsive-bar{
+    display: none;
+}
+.header-container{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    justify-content: center;
+    height: 500px;
+}
+.header-title{
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 85px;
+    margin-bottom: 25px;
+}
+.header-description{
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 50px;
+}
+/* Header section ends here */
+
+
+
+/* Responsive design starts here (For mobile) */
+@media screen and (max-width:576px) {
+header{
+    padding: 0 20px;
+}
+/* Header section starts here */
+.nav-brands > .logo{
+    font-size: 2rem;
+}
+.nav-item{
+    display: none;
+}
+#responsive-bar{
+    display: block;
+}
+#responsive-bar i{
+    font-size: 2rem;
+}
+.header-title{
+    font-size: 2.5rem;
+    line-height: 50px;
+}
+.header-container{
+    width: 100%;
+}
+.header-description{
+    text-align: justify;
+}
+.btn{
+    width: 100%;
+}
+/* Header section ends here */
+}
+/* Responsive design ends here (For mobile) */
+
+
+/* Responsive design starts here (For tablet) */
+@media screen and (min-width:576px) and (max-width:992px) {
+/* Header section starts here */
+.nav-item{
+    display: none;
+}
+#responsive-bar{
+    display: block;
+}
+#responsive-bar i{
+font-size: 2.5rem;
+}
+/* Header section ends here */
+}
+/* Responsive design ends here (For mobile) */
