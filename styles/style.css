@@ -252,6 +252,54 @@ header{
 }
 /* Clients section ends here */
 
+/* FAQ section starts here */
+.faq-section{
+    margin-top: 100px;
+    padding: 0 25px;
+}
+.faq-container{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+.faq-image{
+    width: 100%;
+}
+.faq-image > img{
+    width: 75%;
+}
+.faq-content{
+    width: 100%;
+}
+.faq-card{
+    box-sizing: border-box;
+    border: 1px solid rgb(213, 229, 251);
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    padding: 15px;
+    margin-bottom: 25px;
+}
+.faq-card-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.faq-card-header i{
+    color: rgb(66, 95, 106);
+}
+.faq-card-title{
+    color: rgb(56, 56, 56);
+    font-family: Inter;
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 30px;
+}
+.faq-card-description{
+    margin-top: 15px;
+}
+/* FAQ section ends here */
+
 
 
 /*================================ Responsive design starts here (For mobile)================================ */
@@ -263,7 +311,7 @@ header,
 }
 .title{
     font-size: 2rem;
-    line-height: 40px;
+    line-height: 50px;
 }
 .description{
     text-align: justify;
@@ -321,11 +369,27 @@ header,
 }
 /* Clients section ends here */
 
+/* FAQ section starts here */
+.faq-container{
+    flex-direction: column;
+    gap: 50px;
+}
+.faq-image > img{
+    width: 100%;
+}
+.faq-card-title{
+    text-align: justify;
+}
+.faq-card-header{
+    gap: 25px;
+}
+/* FAQ section ends here */
+
 }
 /*============================= Responsive design ends here (For mobile)============================== */
 
 
-/* Responsive design starts here (For tablet) */
+/*================================ Responsive design starts here (For tablet)=============================== */
 @media screen and (min-width:576px) and (max-width:992px) {
 .title{
     font-size: 2.5rem;
@@ -363,5 +427,24 @@ font-size: 2rem;
     padding: 25px 50px;
 }
 /* Clients section ends here */
+
+/* FAQ section starts here */
+.faq-container{
+    flex-direction: column;
+    gap: 50px;
+}
+.faq-image{
+    text-align: center;
+}
+.faq-image > img{
+    width: 75%;
+}
+.faq-card-title{
+    text-align: justify;
+}
+.faq-card-header{
+    gap: 25px;
+}
+/* FAQ section ends here */
 }
 /* Responsive design ends here (For mobile) */
