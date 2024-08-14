@@ -29,7 +29,8 @@ body{
     max-width: 1440px;
     margin: 0 auto;
 }
-header{
+header,
+main{
     padding: 0 25px;
 }
 .btn{
@@ -42,6 +43,14 @@ header{
     font-size: 1.1rem;
     font-weight: 600;
     line-height: 30px;
+}
+.title{
+    color: rgb(0, 0, 0);
+    font-family: Poppins;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 72px;
+    text-align: center;
 }
 /* Shared styles ends here */
 
@@ -110,12 +119,49 @@ header{
 }
 /* Header section ends here */
 
+/* Featured section starts here */
+.featured-section{
+    margin-top: 100px;
+}
+.featured-sub-title{
+    color: rgb(231, 111, 81);
+    font-family: Poppins;
+    font-size: .9rem;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+
+}
+.featured-sub-title > hr{
+    width:70px;
+    margin: 0 auto;
+    border: 1px solid rgb(231, 111, 81);
+    margin-top: 5px;
+}
+.featured-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 100px;
+    margin-top: 50px;
+}
+.featured-card > img{
+    width: 100%;
+}
+
+/* Featured section ends here */
+
 
 
 /* Responsive design starts here (For mobile) */
 @media screen and (max-width:576px) {
-header{
+header,
+.featured-section{
     padding: 0 20px;
+}
+.title{
+    font-size: 2rem;
+    line-height: 40px;
 }
 /* Header section starts here */
 .nav-brands > .logo{
@@ -128,7 +174,8 @@ header{
     display: block;
 }
 #responsive-bar i{
-    font-size: 2rem;
+    font-size: 1.7rem;
+    margin-bottom: 0;
 }
 .header-title{
     font-size: 2.5rem;
@@ -144,12 +191,26 @@ header{
     width: 100%;
 }
 /* Header section ends here */
+
+/* Featured section starts here */
+.featured-container{
+    grid-template-columns: 1fr;
+    gap: 50px;
+}
+.featured-title{
+    margin-bottom: 5px;
+}
+/* Featured section ends here */
+
 }
 /* Responsive design ends here (For mobile) */
 
 
 /* Responsive design starts here (For tablet) */
 @media screen and (min-width:576px) and (max-width:992px) {
+.title{
+    font-size: 2.5rem;
+}
 /* Header section starts here */
 .nav-item{
     display: none;
@@ -158,7 +219,7 @@ header{
     display: block;
 }
 #responsive-bar i{
-font-size: 2.5rem;
+font-size: 2rem;
 }
 /* Header section ends here */
 }
