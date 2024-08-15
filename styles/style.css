@@ -29,8 +29,7 @@ body{
 /* Universal classes ends here */
 
 /* Shared styles starts here */
-header,
-main{
+header{
     padding: 0 25px;
 }
 .btn{
@@ -297,8 +296,57 @@ header{
 }
 .faq-card-description{
     margin-top: 15px;
+    padding-right: 35px;
 }
 /* FAQ section ends here */
+
+/* Footer section starts here */
+.footer-section{
+    margin-top: 100px;
+    background: rgb(11, 13, 23);
+}
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 25px;
+}
+.footer-div-1,
+.footer-div-2{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.footer-div-2{
+    flex-wrap: wrap;
+}
+.footer-content-1 li,
+.footer-content-2 > h5{
+    list-style: none;
+    color: rgb(255, 255, 255);
+    font-family: Manrope;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+.footer-div-3 > p{
+    color: rgb(217, 219, 225);
+    font-family: Manrope;
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 25px;
+}
+.footer-content-2-img{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.footer-content-2 img{
+    width: 130px;
+}
+
+/* Footer section ends here */
 
 
 
@@ -306,7 +354,8 @@ header{
 @media screen and (max-width:576px) {
 header,
 .featured-section,
-.clients-section{
+.clients-section,
+.footer-container{
     padding: 0 20px;
 }
 .title{
@@ -385,6 +434,15 @@ header,
 }
 /* FAQ section ends here */
 
+/* Footer section starts here */
+.footer-container{
+    flex-direction: column;
+    align-items: start;
+    padding: 50px 20px;
+    gap: 50px;
+}
+/* Footer section ends here */
+
 }
 /*============================= Responsive design ends here (For mobile)============================== */
 
@@ -446,5 +504,7 @@ font-size: 2rem;
     gap: 25px;
 }
 /* FAQ section ends here */
+
+/* Footer sec */
 }
 /* Responsive design ends here (For mobile) */
